@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>{{.Title}}</title>
+	</head>
+	<body>
+		<h1>{{.Header}}</h1>
+		<b>ARCODE : {{.ArCode}}</b><br>
+		<b>ARNAME : {{.ArName}}</b><br>
+		<b>ADDRESS : {{.ArAddress}}</b><br>
+		{{range .Items}}
+			<div>{{ . }}</div>{{else}}
+			<div>
+				<strong>no rows</strong>
+			</div>
+		{{end}}
+	</body>
+</html>
